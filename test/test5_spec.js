@@ -11,7 +11,7 @@ groupBySex - should take an array of people
 It should return a new object with keys for the value of sex and values containing array of people with that sex
 
 groupByYearThenSex - should take an array of poeple
-It shoudl return a new object with keys that are the year the person was born which should have values with keys
+It should return a new object with keys that are the year the person was born which should have values with keys
 for the sex which should have values that are arrays of people born that year with that sex.
 
 e.g.

@@ -1,21 +1,31 @@
 class Greeting {
-  constructor(name) {
-    this.name = name;
-  }
-  sayHello() {
-    throw new Error('I don\'t know how to speak!')
-  }
+    constructor(name) {
+        this.name = name;
+    }
+
+    sayHello() {
+        return this.greeting + " " + this.name;
+    }
 }
 
-// Add your new classes here
+// I need to admit this might not be the best solution ever
 export class English extends Greeting {
-
+    constructor(name) {
+        super(name);
+        this.greeting = "Hello";
+    }
 }
 
 export class French extends Greeting {
-
+    constructor(name) {
+        super(name);
+        this.greeting = "Bonjour";
+    }
 }
 
 export class Spanish extends Greeting {
-
+    constructor(name) {
+        super(name);
+        this.greeting = "Hola";
+    }
 }
